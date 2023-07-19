@@ -13,12 +13,30 @@ app.use(cors());
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  Item.
+app.get("/get-data", (req, res) => {
+  Item.find().then((data, err) => {
+    return res.status(200).json({
+      message: "Items fetched successfully!",
+      tasks: data,
+    })
+  })
 });
 
-app.post("/", (req, res) => {
-  
+app.post("/post-data", (req, res) => {
+  const name = req.body.name;
+  if (!name) {
+    return res.status(400).json({
+      message: "Content is a required field.",
+    });
+  }
+  Item.create({
+    name: name,
+  }).then((data, err) => {
+    return res.status(200).json({
+      message: "Task added successfully!",
+      task: data,
+    });
+  });
 });
 
 app.listen(PORT, () => {

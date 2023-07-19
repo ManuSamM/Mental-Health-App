@@ -23,18 +23,19 @@ function InputItem() {
   const [inputValue, setInputValue] = useState('');
 
   const handleSubmit = async (event) => {
-    console.log(event);
     event.preventDefault();
     const data = {
       name: inputValue
     }
-    const res = await axios.post("http://localhost:3000", data);
+    setInputValue('');
+    const res = await axios.post("http://localhost:3000/post-data", data);
+    
     if (res.status === 200) {
       console.log("User created successfully!");
     } else {
       console.log("Error creating user: ", res.status);
     }
-    setInputValue('');
+    
   };
 
   const handleChange = (event) => {

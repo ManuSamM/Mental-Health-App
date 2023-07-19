@@ -18,7 +18,6 @@ app.get("/get-data", (req, res) => {
   Item.find().then((data, err) => {
     return res.status(200).json({
       message: "Items fetched successfully!",
-      tasks: data,
     })
   })
 });
@@ -35,7 +34,6 @@ app.post("/post-data", (req, res) => {
   }).then((data, err) => {
     return res.status(200).json({
       message: "Item added successfully!",
-      task: data,
     });
   });
 });

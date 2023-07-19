@@ -1,9 +1,10 @@
-const express = require('express')
+import express, { json } from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+import Item from "./models/taskModel.js";
+
 const app = express()
 const PORT = 3000
-const mongoose = require('mongoose');
-const Item = require('./models/taskModel')
-const cors = require('cors')
 
 mongoose.connect('mongodb+srv://manusam9999:kZsFyb9HmHILafc2@cluster0.z8zl0mq.mongodb.net/').then(() => {
   console.log('Mongodb connected successfully')
@@ -33,7 +34,7 @@ app.post("/post-data", (req, res) => {
     name: name,
   }).then((data, err) => {
     return res.status(200).json({
-      message: "Task added successfully!",
+      message: "Item added successfully!",
       task: data,
     });
   });

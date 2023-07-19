@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #EEA47F;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #00539C;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.buttons {
+    border: 0;
+    height: 30px;
+    width: 90px;
+    font-size: 1rem;
+    background-color: #00539C;
+    color: white;
+    font-weight: 500;
+
+}
+
+.labelTag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 2rem;
+    color:white;
+}
+
+.inputTag {
+    width: 10rem;
+    height: 2rem
+}
+
+.submitTag {
+    width: 8rem;
+    height: 38px;
+    font-size: 30px;
+}

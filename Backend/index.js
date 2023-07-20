@@ -11,7 +11,6 @@ mongoose.connect('mongodb+srv://manusam9999:kZsFyb9HmHILafc2@cluster0.z8zl0mq.mo
 });
 
 app.use(cors());
-
 app.use(express.json());
 
 app.get("/get-data", (req, res) => {
@@ -23,12 +22,15 @@ app.get("/get-data", (req, res) => {
 });
 
 app.post("/post-data", (req, res) => {
+  
   const name = req.body.name;
+  
   if (!name) {
     return res.status(400).json({
       message: "Content is a required field.",
     });
   }
+
   Item.create({
     name: name,
   }).then((data, err) => {

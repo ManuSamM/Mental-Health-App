@@ -17,6 +17,7 @@ app.get("/get-data", (req, res) => {
   Item.find().then((data, err) => {
     return res.status(200).json({
       message: "Items fetched successfully!",
+      item: data
     })
   })
 });

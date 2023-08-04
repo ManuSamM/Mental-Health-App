@@ -1,9 +1,11 @@
 * {
     margin: 0;
+    font-family: borel;
 }
 
 body {
-    background-color: #EEA47F;
+    background-color: #0088ff;
+
 }
 
 .navbar {

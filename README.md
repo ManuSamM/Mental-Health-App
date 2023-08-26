@@ -1,3 +1,2 @@
-# MERN
-CipherSchools Project
-This project shows how data is sent from frontend(react) to backend(express) and then to the database(mongodb) and vice versa.
+# Mental Health App
+This project uses MERN stack. This website is to spread awareness on mental health🧑‍⚕️🧠🤯

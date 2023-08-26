@@ -17,8 +17,8 @@ function Articles() {
                 <a href='http://localhost:5173/articles'>
                     <Button text={'Articles'} />
                 </a>
+                <Button text={'Appointment'} />
             </div>
-
             <div className='article1'>
                 <br />
                 <div className='center1'>
@@ -191,7 +191,7 @@ function Articles() {
                     <li><b>Practice Self-Care:</b> Taking care of your mental and emotional well-being is crucial. Engage in activities that bring you joy, relaxation, and a sense of peace.</li>
                 </ul> </p>
             </div >
-            <Footer/>
+            <Footer />
         </>
     )
 }

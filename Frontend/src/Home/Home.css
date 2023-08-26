@@ -4,12 +4,12 @@
 }
 
 body {
-    background-color: #0088ff;
+    background-color: white;
 }
 
 .navbar {
-    height: 60px;
-    background-color: #00539C;
+    height: 70px;
+    background-color: #3272a9;
     align-items: center;
     justify-content: space-evenly;
     display: flex;
@@ -20,10 +20,16 @@ body {
     height: 30px;
     width: 90px;
     font-size: 1rem;
-    background-color: #00539C;
+    background-color: #3272a9;
     color: white;
     font-weight: 500;
 
+}
+
+.buttons:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    transition: transform 0.1s ease-in-out;
 }
 
 .labelTag {
@@ -32,7 +38,7 @@ body {
     align-items: center;
     height: 100px;
     font-size: 2rem;
-    color:white;
+    color: white;
 }
 
 .inputTag {
@@ -44,4 +50,22 @@ body {
     width: 8rem;
     height: 38px;
     font-size: 30px;
+}
+
+.imagecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#mentalhealth {
+    float: left;
+    margin-left: 180px;
+
+}
+
+#mentalhealth:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(5deg);
 }

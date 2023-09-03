@@ -1,23 +1,24 @@
 import './Articles.css'
 import Footer from '../Footer/Footer'
+import mentalhealthlogo from '../Home/mentalhealthlogo.jpg'
 function Button({ text }) {
     return (
         <button className='buttons'><b>{text}</b></button>
     )
 }
-
 function Articles() {
     return (
         <>
             <div className='navbar'>
+                <img src={mentalhealthlogo} height={67} />
                 <a href='http://localhost:5173'>
                     <Button text={'Home'} />
                 </a>
                 <Button text={'About Us'} />
-                <a href='http://localhost:5173/articles'>
-                    <Button text={'Articles'} />
+                <Button text={'Articles'} />
+                <a href='http://localhost:5173/appointment'>
+                    <Button text={'Appointment'} />
                 </a>
-                <Button text={'Appointment'} />
             </div>
             <div className='article1'>
                 <br />
@@ -51,11 +52,11 @@ function Articles() {
                         community-based systems in low-income countries and has also yielded positive
                         results in creating awareness, thereby impacting participation.</p><br />
                     <p>
-                        Awareness and health literacy are two sides of the same coin. Stigma and discrimination are negative consequences
-                        of ignorance and misinformation. There are a few studies which have measured mental health literacy in the
-                        Indian context. One study found mental health literacy among adolescents to be very low, i.e. depression was
-                        identified by 29.04% and schizophrenia/psychosis was recognized only by 1.31%. Stigma was noted to be present
-                        in help-seeking. </p><br />
+                        Awareness and health literacy are two sides of the same coin. Stigma and discrimination are negative
+                        consequences of ignorance and misinformation. There are a few studies which have measured mental
+                        health literacy in the Indian context. One study found mental health literacy among adolescents
+                        to be very low, i.e. depression was identified by 29.04% and schizophrenia/psychosis was recognized
+                        only by 1.31%. Stigma was noted to be present in help-seeking. </p><br />
 
                     <p>These findings reinforce the need to increase awareness of mental health. Mental health literacy is a
                         related concept which is increasingly seen as an important measure of the awareness and knowledge of
@@ -174,21 +175,29 @@ function Articles() {
                         yourself achieving your goals. Imagine how it feels, what it looks like,
                         and the impact it will have on your life.</li>
                     <br />
-                    <li><b>Stay Curious:</b> Keep learning and exploring new things related to your goals. Curiosity can keep your mind engaged and motivated to keep pushing forward.</li>
+                    <li><b>Stay Curious:</b> Keep learning and exploring new things related to your goals.
+                        Curiosity can keep your mind engaged and motivated to keep pushing forward.</li>
                     <br />
-                    <li><b>Reward Yourself:</b> Treat yourself for reaching milestones. Rewards can be small, like enjoying your favorite snack or taking a relaxing day off.</li>
+                    <li><b>Reward Yourself:</b> Treat yourself for reaching milestones. Rewards can be small,
+                        like enjoying your favorite snack or taking a relaxing day off.</li>
                     <br />
-                    <li><b>Embrace Setbacks:</b> Understand that setbacks are a natural part of any journey. Instead of getting discouraged, use them as opportunities to learn and grow stronger.</li>
+                    <li><b>Embrace Setbacks:</b> Understand that setbacks are a natural part of any journey.
+                        Instead of getting discouraged, use them as opportunities to learn and grow stronger.</li>
                     <br />
-                    <li><b>Stay Healthy: </b>Physical well-being has a big impact on motivation. Regular exercise, a balanced diet, and adequate sleep can boost your energy levels and overall positivity.</li>
+                    <li><b>Stay Healthy: </b>Physical well-being has a big impact on motivation. Regular
+                        exercise, a balanced diet, and adequate sleep can boost your energy levels and overall positivity.</li>
                     <br />
-                    <li><b>Mix Things Up:</b> Monotony can lead to boredom and demotivation. Try to introduce variety into your routine to keep things fresh and exciting.</li>
+                    <li><b>Mix Things Up:</b> Monotony can lead to boredom and demotivation. Try to introduce
+                        variety into your routine to keep things fresh and exciting.</li>
                     <br />
-                    <li><b>Track Your Progress:</b> Keep a journal or use a tracking app to document your progress. Looking back at how far you've come can be incredibly motivating.</li>
+                    <li><b>Track Your Progress:</b> Keep a journal or use a tracking app to document your progress.
+                        Looking back at how far you've come can be incredibly motivating.</li>
                     <br />
-                    <li><b>Stay Inspired:</b> Read books, listen to podcasts, or watch videos that align with your goals. Learning from others who have succeeded can provide a motivational boost.</li>
+                    <li><b>Stay Inspired:</b> Read books, listen to podcasts, or watch videos that align with your goals.
+                        Learning from others who have succeeded can provide a motivational boost.</li>
                     <br />
-                    <li><b>Practice Self-Care:</b> Taking care of your mental and emotional well-being is crucial. Engage in activities that bring you joy, relaxation, and a sense of peace.</li>
+                    <li><b>Practice Self-Care:</b> Taking care of your mental and emotional well-being is crucial.
+                        Engage in activities that bring you joy, relaxation, and a sense of peace.</li>
                 </ul> </p>
             </div >
             <Footer />

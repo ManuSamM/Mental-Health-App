@@ -1,25 +1,10 @@
 import './Articles.css'
 import Footer from '../Footer/Footer'
-import mentalhealthlogo from '../Home/mentalhealthlogo.jpg'
-function Button({ text }) {
-    return (
-        <button className='buttons'><b>{text}</b></button>
-    )
-}
+import Navbar from '../Navbar/Navbar'
 function Articles() {
     return (
         <>
-            <div className='navbar'>
-                <img src={mentalhealthlogo} height={67} />
-                <a href='http://localhost:5173'>
-                    <Button text={'Home'} />
-                </a>
-                <Button text={'About Us'} />
-                <Button text={'Articles'} />
-                <a href='http://localhost:5173/appointment'>
-                    <Button text={'Appointment'} />
-                </a>
-            </div>
+            <Navbar/>
             <div className='article1'>
                 <br />
                 <div className='center1'>

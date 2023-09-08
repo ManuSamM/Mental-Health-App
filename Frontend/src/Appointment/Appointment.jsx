@@ -3,29 +3,14 @@ import { useEffect, useState } from "react"
 import email from './email.png'
 import password from './password.png'
 import person from './person.png'
-import mentalhealthlogo from '../Home/mentalhealthlogo.jpg'
 import { useNavigate, Link } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
 import './Appointment.css'
-function Button({ text }) {
-  return (
-    <button className='buttons'><b>{text}</b></button>
-  )
-}
 function Output() {
   const [action, setAction] = useState("Login");
   return (
     <>
-      <div className='navbar'>
-        <img src={mentalhealthlogo} height={67} />
-        <a href='http://localhost:5173'>
-          <Button text={'Home'} />
-        </a>
-        <Button text={'About Us'} />
-        <a href="http://localhost:5173/articles">
-          <Button text={'Articles'} />
-        </a>
-        <Button text={'Appointment'} />
-      </div>
+      <Navbar/>
       <div className="container">
         <div className="header">
           <div className="text">{action}</div>

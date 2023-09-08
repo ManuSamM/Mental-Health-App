@@ -1,7 +1,7 @@
 import express, { json } from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import Item from "./models/taskModel.js";
+import collection from "./models/collectionModel.js";
 
 const app = express()
 const PORT = 3000
@@ -13,34 +13,56 @@ mongoose.connect('mongodb+srv://manusam9999:kZsFyb9HmHILafc2@cluster0.z8zl0mq.mo
 app.use(cors());
 app.use(express.json());
 
-app.get("/get-data", (req, res) => {
-  Item.find().then((data, err) => {
-    return res.status(200).json({
-      message: "Items fetched successfully!",
-      items: data
-    })
-  })
-});
+app.get("/",cors(),(req,res)=>{
 
-app.post("/post-data", (req, res) => {
-  
-  const name = req.body.name;
-  
-  if (!name) {
-    return res.status(400).json({
-      message: "Content is a required field.",
-    });
-  }
+})
 
-  Item.create({
-    name: name,
-  }).then((data, err) => {
-    return res.status(200).json({
-      message: "Item added successfully!",
-    });
-  });
-});
+app.post("/",async(req,res)=>{
+    const{email,password}=req.body
 
-app.listen(PORT, () => {
-  console.log("Listening on port:" + PORT);
-});
+    try{
+        const check=await collection.findOne({email:email})
+
+        if(check){
+            res.json("exist")
+        }
+        else{
+            res.json("notexist")
+        }
+
+    }
+    catch(e){
+        res.json("fail")
+    }
+
+})
+
+app.post("/signup",async(req,res)=>{
+    const{email,password}=req.body
+
+    const data={
+        email:email,
+        password:password
+    }
+
+    try{
+        const check=await collection.findOne({email:email})
+
+        if(check){
+            res.json("exist")
+        }
+        else{
+            res.json("notexist")
+            await collection.insertMany([data])
+        }
+
+    }
+    catch(e){
+        res.json("fail")
+    }
+
+})
+
+app.listen(3000,()=>{
+    console.log("port connected");
+})

@@ -16,7 +16,7 @@ function Navbar() {
             <a href='http://localhost:5173/articles'>
                 <Button text={'Articles'} />
             </a>
-            <a href='http://localhost:5173/appointment'>
+            <a href='http://localhost:5173/appointment/login'>
                 <Button text={'Appointment'} />
             </a>
         </div>

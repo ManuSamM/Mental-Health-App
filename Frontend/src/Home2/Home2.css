@@ -39,7 +39,8 @@
 }
 .App ul{
     font-family: poppins;
-    display: flex;
+    margin: auto;
+    margin-left: 570px;
     align-items: center;
     justify-content: center;
 }
@@ -56,3 +57,4 @@
     justify-content: center;
     gap: 15px;
 }
+

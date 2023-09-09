@@ -14,7 +14,7 @@ function Home2() {
 
     // Function to handle booking an appointment
     const bookAppointment = () => {
-        if(!name || !date || !time || !disease){
+        if (!name || !date || !time || !disease) {
             alert('Please fill the form completely');
         }
         if (name && date && time && disease) {
@@ -36,7 +36,6 @@ function Home2() {
         setTime('');
         setDisease('');
     };
-
     return (
         <div className="home2">
             <Navbar />
@@ -67,21 +66,23 @@ function Home2() {
                         <input type="time" value={time} onChange={(e) => setTime(e.target.value)} required />
                     </div>
                     <br />
-                    <button type="button" onClick={bookAppointment}>Book Appointment</button>
+                    <button type="button" id="bottonhome2" onClick={bookAppointment}>Book Appointment</button>
                 </form>
                 <br />
                 <h2>Booked Appointments</h2>
                 <br />
-                <ul>
+                <ul className="ulhome2">
                     {appointments.map((appointment, index) => (
-                        <li key={index}>
-                           {appointment.disease} - {appointment.name} - Date: {appointment.date}, Time: {appointment.time}
-                        </li>
+                        <>
+                            <li key={index}>
+                                {appointment.disease} - {appointment.name} - Date: {appointment.date}, Time: {appointment.time} <br />
+                            </li>
+                        </>
                     ))}
                 </ul>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
             </div>
             <Footer />
         </div>

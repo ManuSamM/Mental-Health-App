@@ -40,7 +40,7 @@ function Home2() {
         <div className="home2">
             <Navbar />
             <br /><br />
-            <h1 className="home2head">Hello {location.state.id}, how can we assist you 🙂</h1>
+            <h1 className="home2head">Hello {location.state.id} , how can we assist you 🙂</h1>
             <br />
             <div className="App">
                 <h1>Appointment Booking System</h1>

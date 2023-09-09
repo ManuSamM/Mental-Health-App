@@ -31,7 +31,6 @@ function AppointmentSignup() {
         }
         catch (e) {
             console.log(e);
-
         }
     }
     return (

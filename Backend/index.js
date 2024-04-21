@@ -6,9 +6,12 @@ import collection from "./models/collectionModel.js";
 const app = express()
 const PORT = 3000
 
-mongoose.connect('mongodb+srv://manusam9999:kZsFyb9HmHILafc2@cluster0.z8zl0mq.mongodb.net/').then(() => {
-  console.log('Mongodb connected successfully')
-});
+// mongoose.connect('mongodb+srv://manusam9999:kZsFyb9HmHILafc2@cluster0.z8zl0mq.mongodb.net/').then(() => {
+//   console.log('Mongodb connected successfully')
+// });
+
+mongoose.connect('mongodb://127.0.0.1:27017/health');
+
 
 app.use(cors());
 app.use(express.json());

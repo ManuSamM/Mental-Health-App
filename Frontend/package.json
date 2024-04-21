@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/ManuSamM/Mental-Health-App/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

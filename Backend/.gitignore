@@ -1,6 +1,13 @@
-/node_modules
-/.env
-/build
-/logs
+# Dependency directories
+node_modules/
+
+# Environment configuration
+.env
+
+# Logs
 *.log
 npm-debug.log*
+
+# Other ignore files
+*.pid
+*.seed

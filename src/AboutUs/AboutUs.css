@@ -1,0 +1,50 @@
+.aboutus {
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.manujpg {
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manujpg:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.aboutus ul li {
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 600px;
+}
+
+.aboutus ul li:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whoarewe {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: poppins;
+}
+
+.vision {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: poppins;
+}

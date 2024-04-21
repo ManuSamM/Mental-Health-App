@@ -1,0 +1,60 @@
+
+.home2head {
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App h1{
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.App form{
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+}
+
+.home2form label{
+    font-family: poppins;
+}
+.home2form input{
+    font-family: poppins;
+}
+.home2form button{
+    font-family: poppins;
+}
+
+.App h2{
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.App ul{
+    font-family: poppins;
+    margin: auto;
+    margin-left: 540px;
+    align-items: center;
+    justify-content: center;
+}
+.home2form button{
+    height: 70px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+.home2form .label1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+

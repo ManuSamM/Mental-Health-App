@@ -1,0 +1,84 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    background: #fff;
+    padding-bottom: 30px;
+    width: 600px;
+    border-radius: 12px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: poppins;
+    color: #0080ff96;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header h1 {
+    font-family: poppins;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    background: #0080ff96;
+    border-radius: 9px;
+}
+
+form {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: poppins;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+    font-family: poppins;
+    font-size: 17px;
+    border: none;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background-color: #0080ff96;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+}

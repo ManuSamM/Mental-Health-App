@@ -1,0 +1,36 @@
+.footer {
+    background-color: #3272a9;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+
+  .helpline {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
